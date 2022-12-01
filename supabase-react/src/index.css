@@ -1,12 +1,20 @@
+@import url("https://use.typekit.net/bzn6gfe.css");
+
 * {
   padding: 0;
   margin: 0;
+  font-family: articulat-cf, sans-serif;
+  font-style: normal;
 }
 
 .App {
   height: 100vh;
-
-  background-color: #50514F;
+  background-image: url('https://images.unsplash.com/photo-1669234448331-adf6d756c1be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1127&q=80');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .nav {
@@ -30,7 +38,23 @@
   font-size: clamp(1.5rem, 3vw, 1.5rem);
   float: left;
 
-  color: #FFE066;
+  color: #0D1317;
 
   text-decoration: none;
+
+  font-weight: 500;
+  letter-spacing: 2px;
+
+  transition: opacity 500ms ease,
+  margin-left 500ms ease;
+}
+
+.navlinks:hover > .navlink {
+  opacity: 0.3;
+}
+
+.navlinks:hover > .navlink:hover {
+  opacity: 1;
+  margin-left: 1vw;
+  font-weight: 700;
 }
